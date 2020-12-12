@@ -22,3 +22,17 @@ def calculando_aprovacao(media): # chamando uma função inteira por parâmetro
         print("ALUNO REPROVADO.")
 
 calculando_aprovacao(media()) # chamando a função.
+
+# Outra forma de calcular a média de um aluno
+
+def main():
+    primeira_avaliacao = float(input('Qual é a nota da primeira avaliação: ')) # incerssão dos dados
+    segunda_avaliacao = float(input('Qual é a nota da segunda avaliação: '))
+    media_aluno = (primeira_avaliacao + segunda_avaliacao) / 2 # cálculo da média
+    
+    if media_aluno >= 7.5: # condicional
+        print('você foi aprovado,parabéns sua média foi ',media_aluno)
+    else:
+        print('você foi reprovado,sua média foi ',media_aluno)
+
+main() # chamando a função
